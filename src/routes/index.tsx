@@ -1,11 +1,11 @@
 import { component$ } from '@builder.io/qwik';
 import type { DocumentHead } from '@builder.io/qwik-city';
-import Building from '~/components/building/building';
+import { Hero } from '~/components/hero/hero';
 
 export default component$(() => {
   return (
     <>
-      <Building />
+      <Hero />
     </>
   );
 });
