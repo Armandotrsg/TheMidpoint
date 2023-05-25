@@ -22,7 +22,7 @@ export const Aboutus = component$(() => {
                     <div class="mt-4 md:mt-8">
                         <a
                             href="#"
-                            class="inline-block rounded bg-emerald-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-emerald-700 focus:outline-none focus:ring focus:ring-yellow-400"
+                            class="inline-block rounded bg-primary-500 px-12 py-3 text-sm font-medium transition hover:bg-primary-600 focus:outline-none focus:ring focus:ring-yellow-400"
                         >
                             Contáctanos hoy
                         </a>

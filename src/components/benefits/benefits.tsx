@@ -1,8 +1,8 @@
 import { component$ } from "@builder.io/qwik";
-import { services } from "./services";
+import { benefitsInfo } from "./benefitsInfo";
 
-export const Features = component$(() => {
-    const FeatureItem = ({ feature }: { feature: string }) => {
+export const Benefits = component$(() => {
+    const BenefitItem = ({ benefit }: { benefit: string }) => {
         return (
             <div class="flex items-start">
                 <svg
@@ -16,25 +16,24 @@ export const Features = component$(() => {
                         clip-rule="evenodd"
                     ></path>
                 </svg>
-                <p class="text-lg text-gray-700">{feature}</p>
+                <p class="text-lg text-gray-700">{benefit}</p>
             </div>
         );
     };
     return (
         <section class="p-8 md:p-12 lg:px-16 lg:py-24 py-20 mx-auto max-w-7xl">
             <div class="grid items-center grid-cols-1 lg:grid-cols-2 gap-y-10 lg:gap-y-32 gap-x-10 lg:gap-x-24">
-                <div>
+                <div class="order-first lg:order-last">
                     <h2 class="mb-3 text-3xl font-extrabold leading-tight tracking-tight text-center text-black sm:text-left md:text-4xl">
-                        Nos adaptamos a tus necesidades
+                        ¿Por qué elegirnos?
                     </h2>
                     <p class="mb-6 text-lg text-center text-gray-600 sm:text-left md:text-xl">
-                        Contamos con un amplio repertorio de servicios que se
-                        adaptan a las necesidades de tu empresa.
+                        Más de 20 años de experiencia en el sector nos avalan.
                     </p>
                 </div>
                 <div class="flex flex-col flex-grow space-y-5">
-                    {services.map((service, index) => (
-                        <FeatureItem key={index} feature={service} />
+                    {benefitsInfo.map((item, index) => (
+                        <BenefitItem key={index} benefit={item} />
                     ))}
                 </div>
             </div>
