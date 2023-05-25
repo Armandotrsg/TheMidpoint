@@ -21,7 +21,7 @@ export const Benefits = component$(() => {
         );
     };
     return (
-        <section class="p-8 md:p-12 lg:px-16 lg:py-24 py-20 mx-auto max-w-7xl">
+        <section class="p-8 bg-gray-50 md:p-12 lg:px-16 lg:py-24 py-20 mx-auto max-w-7xl">
             <div class="grid items-center grid-cols-1 lg:grid-cols-2 gap-y-10 lg:gap-y-32 gap-x-10 lg:gap-x-24">
                 <div class="order-first lg:order-last">
                     <h2 class="mb-3 text-3xl font-extrabold leading-tight tracking-tight text-center text-black sm:text-left md:text-4xl">
