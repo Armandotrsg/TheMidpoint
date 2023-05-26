@@ -4,7 +4,6 @@ import { Hero } from '~/components/hero/hero';
 import { Aboutus } from '~/components/aboutus/aboutus';
 import { Services } from '~/components/services/services';
 import { Benefits } from '~/components/benefits/benefits';
-import { Team } from '~/components/team/team';
 
 export default component$(() => {
   return (
@@ -13,7 +12,6 @@ export default component$(() => {
       <Aboutus />
       <Services />
       <Benefits />
-      <Team />
     </>
   );
 });
