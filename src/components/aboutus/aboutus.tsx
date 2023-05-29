@@ -1,11 +1,12 @@
 import { component$ } from "@builder.io/qwik";
 import peopleSearch from "../../assets/peopleSearch.svg";
 
-
 export const Aboutus = component$(() => {
     return (
-        <section class="overflow-hidden bg-gray-50 grid md:grid-cols-2 md:items-center">
-            
+        <section
+            id="conocenos"
+            class="overflow-hidden bg-gray-50 grid md:grid-cols-2 md:items-center"
+        >
             <div class="p-8 md:p-12 lg:px-16 lg:py-24 md:order-last">
                 <div class="mx-auto max-w-xl text-center md:text-left">
                     <h2 class="text-2xl font-bold text-gray-900 md:text-3xl">

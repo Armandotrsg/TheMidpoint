@@ -6,16 +6,16 @@ export const navigationTabs = [
         href: "#conocenos",
     },
     {
-        name: "Productos",
-        href: "#productos",
+        name: "Servicios",
+        href: "#servicios",
+    },
+    {
+        name: "Beneficios",
+        href: "#beneficios",
     },
     {
         name: "Contacto",
         href: "#contacto",
-    },
-    {
-        name: "FAQ's",
-        href: "#faqs",
     },
 ];
 

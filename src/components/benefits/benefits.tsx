@@ -21,7 +21,7 @@ export const Benefits = component$(() => {
         );
     };
     return (
-        <section class="bg-gray-50">
+        <section id="beneficios" class="bg-gray-50">
             <div class="p-8 md:p-12 lg:px-16 lg:py-24 py-20 mx-auto max-w-7xl">
                 <div class="grid items-center grid-cols-1 lg:grid-cols-2 gap-y-10 lg:gap-y-32 gap-x-10 lg:gap-x-24">
                     <div class="order-first lg:order-last">

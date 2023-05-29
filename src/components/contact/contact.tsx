@@ -30,7 +30,7 @@ export const Contact = component$(() => {
         );
     };
     return (
-        <section>
+        <section id="contacto">
             <CTA />
             <div class="container px-6 py-12 mx-auto">
                 <div class="grid grid-cols-1 gap-12 mt-10 md:grid-cols-2">
