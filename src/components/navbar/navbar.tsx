@@ -1,4 +1,4 @@
-import { component$, useSignal } from "@builder.io/qwik";
+import { component$, useSignal, $ } from "@builder.io/qwik";
 
 export const navigationTabs = [
     {
@@ -21,9 +21,18 @@ export const navigationTabs = [
 
 export const Navbar = component$(() => {
     const open = useSignal(true);
+    const scrolled = useSignal(false);
+
+    const handleScroll = $(() => {
+        if (window.scrollY > 50) {
+            scrolled.value = true;
+        } else {
+            scrolled.value = false;
+        }
+    });
 
     return (
-        <nav class="bg-white border-gray-200 px-5">
+        <nav window:onScroll$={handleScroll} class={`${scrolled.value ? "shadow-md" : ""} bg-white duration-300 ease-in-out px-5 fixed w-full z-40`}>
             <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <a href="/" class="flex items-center">
                     <img
@@ -64,12 +73,12 @@ export const Navbar = component$(() => {
                     class={`${open.value && "hidden relative z-30"} w-full md:block md:w-auto`}
                     id="navbar-default"
                 >
-                    <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white">
+                    <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-transparent">
                         {navigationTabs.map((tab, index) => (
                             <li key={index}>
                                 <a
                                     href={tab.href}
-                                    class="block py-2 pl-3 pr-4 rounded md:bg-transparent text-secondary-950 md:hover:text-secondary-800 md:hover:bg-transparent hover:bg-gray-200 md:p-0"
+                                    class="block py-2 pl-3 pr-4 rounded md:bg-transparent text-secondary-950 md:hover:text-primary-500 md:hover:bg-transparent duration-300 hover:bg-gray-200 md:p-0"
                                     aria-current="page"
                                 >
                                     {tab.name}

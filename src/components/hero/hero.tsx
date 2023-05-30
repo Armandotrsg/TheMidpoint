@@ -3,7 +3,7 @@ import heroInterview from "../../assets/heroInterview.svg";
 
 export const Hero = component$(() => {
     return (
-        <header>
+        <header class="py-[4.5rem]">
             <div class="xl:container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between px-10">
                 <div class="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
                     <h1 class="text-4xl font-bold leading-none sm:text-5xl">
