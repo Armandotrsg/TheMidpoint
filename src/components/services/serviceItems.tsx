@@ -44,12 +44,12 @@ export const ServiceItems = component$(
                     <Modal isOpen={isOpen.value} onClose={setIsOpen}>
                         <ModalTitle>{title}</ModalTitle>
                         <div class="p-4">
-                            <ul class="list-disc list-inside flex flex-col flex-wrap items-start md:items-center justify-center">
+                            <ul class="list-disc list-inside flex flex-col space-y-2 flex-wrap items-start md:items-center justify-center">
                                 {description?.map((item, index) => {
                                     return (
                                         <li
                                             key={index}
-                                            class="text-gray-600 p-3"
+                                            class="text-gray-600"
                                         >
                                             {item}
                                         </li>
