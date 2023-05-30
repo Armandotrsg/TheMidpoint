@@ -20,17 +20,17 @@ export const Hero = component$(() => {
                     <div class="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
                         <a
                             rel="noopener noreferrer"
-                            href="#"
-                            class="px-8 py-3 text-lg font-semibold rounded bg-primary-400 hover:bg-primary-500 text-gray-900"
+                            href="#contacto"
+                            class="px-8 py-3 text-lg font-semibold rounded bg-primary-400 hover:bg-primary-500 text-gray-900 duration-300"
                         >
-                            Suspendisse
+                            Contáctanos
                         </a>
                         <a
                             rel="noopener noreferrer"
-                            href="#"
-                            class="px-8 py-3 text-lg font-semibold border rounded"
+                            href="#servicios"
+                            class="px-8 py-3 text-lg font-semibold border rounded hover:bg-gray-50 duration-300"
                         >
-                            Malesuada
+                            Conoce más
                         </a>
                     </div>
                 </div>

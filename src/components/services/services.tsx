@@ -18,8 +18,8 @@ export const Services = component$(() => {
                         </p>
 
                         <a
-                            href="#"
-                            class="mt-8 inline-block rounded bg-blue-500 px-12 py-3 text-sm font-medium text-white transition hover:bg-blue-600 focus:outline-none focus:ring focus:ring-yellow-400"
+                            href="#contacto"
+                            class="mt-8 inline-block rounded bg-blue-500 px-12 py-3 text-sm font-medium text-white transition hover:bg-blue-600 focus:outline-none duration-300 focus:ring focus:ring-yellow-400"
                         >
                             Empieza hoy
                         </a>

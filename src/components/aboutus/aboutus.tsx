@@ -22,10 +22,10 @@ export const Aboutus = component$(() => {
 
                     <div class="mt-4 md:mt-8">
                         <a
-                            href="#"
-                            class="inline-block rounded bg-primary-500 px-12 py-3 text-sm font-medium transition hover:bg-primary-600 focus:outline-none focus:ring focus:ring-yellow-400"
+                            href="#beneficios"
+                            class="inline-block rounded bg-primary-500 px-12 py-3 text-sm font-medium transition hover:bg-primary-600 focus:outline-none focus:ring focus:ring-yellow-400 duration-300"
                         >
-                            Contáctanos hoy
+                            Conoce más
                         </a>
                     </div>
                 </div>
