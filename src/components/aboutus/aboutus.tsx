@@ -5,7 +5,7 @@ export const Aboutus = component$(() => {
     return (
         <section
             id="conocenos"
-            class="overflow-hidden bg-gray-50 grid md:grid-cols-2 md:items-center"
+            class="overflow-hidden bg-gray-50 grid md:grid-cols-2 md:items-center pt-5 md:pt-0"
         >
             <div class="p-8 md:p-12 lg:px-16 lg:py-24 md:order-last">
                 <div class="mx-auto max-w-xl text-center md:text-left">
@@ -13,7 +13,7 @@ export const Aboutus = component$(() => {
                         The Midpoint
                     </h2>
 
-                    <p class="hidden text-gray-500 md:mt-4 md:block">
+                    <p class="text-gray-500 md:mt-4 block py-5 px-2">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Et, egestas tempus tellus etiam sed. Quam a scelerisque
                         amet ullamcorper eu enim et fermentum, augue. Aliquet
