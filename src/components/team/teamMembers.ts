@@ -1,5 +1,3 @@
-import armando from "../../assets/armando.jpg";
-
 export type membersProps = {
     name: string;
     position: string;
@@ -9,7 +7,7 @@ export type membersProps = {
         linkedin: string;
         phone: string;
     };
-    image: string;
+    image?: string;
 }
 
 export const teamMembers: membersProps[] = [
@@ -22,6 +20,5 @@ export const teamMembers: membersProps[] = [
             linkedin: "https://www.linkedin.com/in/armando-jesus-terrazas-lopez-3a82487/",
             phone: "33"
         },
-        image: armando,
     }
 ]
