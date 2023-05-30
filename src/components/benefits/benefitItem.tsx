@@ -5,7 +5,6 @@ export const BenefitItem = component$(({ benefit, index }: { benefit: string; in
     useVisibleTask$(() => {
         setTimeout(() => {
             animate.value = true;
-            console.log(animate.value);
         }, 400 + 75 * (index + 1));
     });
     return (
