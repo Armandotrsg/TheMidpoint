@@ -21,14 +21,14 @@ export const Hero = component$(() => {
                         <a
                             rel="noopener noreferrer"
                             href="#contacto"
-                            class="px-8 py-3 text-lg font-semibold rounded bg-primary-400 hover:bg-primary-500 text-gray-900 duration-300"
+                            class="px-8 py-3 text-lg font-semibold rounded bg-primary-500 hover:bg-primary-600 text-gray-900 duration-300"
                         >
                             Contáctanos
                         </a>
                         <a
                             rel="noopener noreferrer"
                             href="#servicios"
-                            class="px-8 py-3 text-lg font-semibold border rounded hover:bg-gray-50 duration-300"
+                            class="px-8 py-3 text-lg font-semibold border rounded hover:bg-gray-100 duration-300"
                         >
                             Conoce más
                         </a>

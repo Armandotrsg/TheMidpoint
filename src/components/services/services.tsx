@@ -17,7 +17,7 @@ export const Services = component$(() => {
                             Contamos con un amplio repertorio de servicios que
                             se adaptan a las necesidades de tu empresa.
                         </p>
-                        <ButtonArrow href="#contacto" text="Empieza ya" />
+                        <ButtonArrow href="#contacto" text="Empieza ya" bgColor="blue" textColor="white" />
                     </div>
 
                     <div class="grid grid-cols-2 gap-4 sm:grid-cols-3">
