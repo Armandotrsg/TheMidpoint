@@ -12,7 +12,7 @@ export const Modal = component$(({isOpen, onClose, className} : ModalProps) => {
         <div
             onClick$={onClose}
             class={`
-            fixed inset-0 flex items-center justify-center transition-colors ${
+            fixed inset-0 flex items-center justify-center transition-colors z-50 ${
                 isOpen ? "visible bg-black/20" : "invisible"
             }
         `}
@@ -27,7 +27,7 @@ export const Modal = component$(({isOpen, onClose, className} : ModalProps) => {
                 {/* Closing button */}
                 <button
                     onClick$={onClose}
-                    class="absolute top-1 right-1 p-1 rounded-lg text-gray-400 bg-white hover:bg-gray-50 hover:text-gray-600 flex justify-center items-center"
+                    class="absolute top-1 right-1 p-1 rounded-lg text-gray-400 bg-white hover:bg-gray-50 duration-200 hover:text-gray-600 flex justify-center items-center"
                 >
                     <svg
                         xmlns="http://www.w3.org/2000/svg"

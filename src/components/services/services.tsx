@@ -28,7 +28,7 @@ export const Services = component$(() => {
                     <div class="grid grid-cols-2 gap-4 sm:grid-cols-3">
                         {servicesInfo.map((item, index) => {
                             return (
-                                <ServiceItems key={index} {...item}>
+                                <ServiceItems key={index} {...item} index={index}>
                                     {item.icon}
                                 </ServiceItems>
                             );
