@@ -36,9 +36,9 @@ module.exports = {
                 "flip-vertical-right":
                     "flip-vertical-right 0.2s cubic-bezier(0.455, 0.030, 0.515, 0.955) both",
                 "slide-right":
-                    "animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both",
+                    "slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both",
                     "scale-up-center": 
-                        "animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both"
+                        "scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both"
                     
             },
             keyframes: {
@@ -64,12 +64,16 @@ module.exports = {
                 },
                 "scale-up-center": {
                     "0%": {
-                        transform: "scale(0.5)",
                         opacity: 0,
+                        transform: "scale(0.5)",
+                    },
+                    "50%": {
+                        opacity: 1,
+                        transform: "scale(1.1)",
                     },
                     "100%": {
-                        transform: "scale(1)",
                         opacity: 1,
+                        transform: "scale(1)",
                     }
                 }
             },

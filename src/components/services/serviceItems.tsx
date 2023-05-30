@@ -24,7 +24,7 @@ export const ServiceItems = component$(
         useVisibleTask$(() => {
             setTimeout(() => {
                 animate.value = true;
-            }, 400 + 150 * (index + 1));
+            }, 400 + 120 * (index + 1));
         });
 
         return (
