@@ -1,4 +1,10 @@
-export const servicesInfo = [
+export type ServiceInfoProps = {
+    title: string;
+    icon: any;
+    description?: string[];
+};
+
+export const servicesInfo: ServiceInfoProps[] = [
     {
         title: "Asesoría en la Implementación de la NOM 035",
         icon: (
@@ -18,6 +24,12 @@ export const servicesInfo = [
                 ></path>
             </svg>
         ),
+        description: [
+            "Asesoría en Implementación",
+            "Diagnóstico NOM 035",
+            "Indicación de medidas correctivas",
+            "Buzón de quejas y sugerencias",
+        ],
     },
     {
         title: "Sueldos e Incentivos variables",
@@ -38,6 +50,13 @@ export const servicesInfo = [
                 ></path>
             </svg>
         ),
+        description: [
+            "Valuación de puestos",
+            "Tabulador de Sueldos",
+            "Comparación vs mercado nacional",
+            "Esquema de compensaciones e incentivos variables.",
+            "Proyección de incrementos salariales para el año siguiente",
+        ],
     },
     {
         title: "Desarrollo Organizacional",
@@ -58,6 +77,14 @@ export const servicesInfo = [
                 ></path>
             </svg>
         ),
+        description: [
+            "Apoyo en programa de capacitación",
+            "Registros ante STPS",
+            "Gestión de Talento",
+            "Planes de sucesión.",
+            "Evaluación psicométrica y 360º al equipo de trabajo vigente de forma anual",
+            "Competencias laborales",
+        ],
     },
     {
         title: "Gestión de Talento",
@@ -140,6 +167,10 @@ export const servicesInfo = [
                 <path d="M8 0a2.5 2.5 0 0 0-2.5 2.5v7.55a3.5 3.5 0 1 0 5 0V2.5A2.5 2.5 0 0 0 8 0zM6.5 2.5a1.5 1.5 0 1 1 3 0v7.987l.167.15a2.5 2.5 0 1 1-3.333 0l.166-.15V2.5z" />
             </svg>
         ),
+        description: [
+            "Evaluación anual de clima organizacional",
+            "Reporte ejecutivo",
+        ],
     },
     {
         title: "Assessment Center",
@@ -180,6 +211,11 @@ export const servicesInfo = [
                 ></path>
             </svg>
         ),
+        description: [
+            "Comunicados Generales",
+            "2 comunicados especiales",
+            "Comunicado de Cumpleaños",
+        ],
     },
     {
         title: "Seguridad Industrial NOM's STPS",
@@ -200,6 +236,14 @@ export const servicesInfo = [
                 ></path>
             </svg>
         ),
+        description: [
+            "NOMS STPS",
+            "Cumplimiento Protección civil",
+            "Brigadas",
+            "Entorno seguro",
+            "Certificaciones",
+            "Asesoría medica laboral",
+        ],
     },
     {
         title: "Payroll (nómina)",
@@ -220,6 +264,15 @@ export const servicesInfo = [
                 ></path>
             </svg>
         ),
+        description: [
+            "Payroll",
+            "Pólizas contables",
+            "Valuación de puestos",
+            "Tabulador de Sueldos",
+            "Comparación vs mercado nacional",
+            "Esquema de compensaciones e incentivos variables.",
+            "Proyección de incrementos salariales para el año siguiente",
+        ],
     },
     {
         title: "Reclutamiento y Selección de personal",
@@ -240,5 +293,9 @@ export const servicesInfo = [
                 ></path>
             </svg>
         ),
+        description: [
+            "Reclutamiento de una cantidad acordada de personal.",
+            "Perfiles de puestos",
+        ],
     },
 ];
