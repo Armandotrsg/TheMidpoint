@@ -12,12 +12,7 @@ export const Hero = component$(() => {
                             cuidamos de tu talento humano
                         </span>
                     </h1>
-                    <p class="mt-6 mb-8 text-lg sm:mb-12">
-                        Dictum aliquam porta in condimentum ac integer
-                        <br class="hidden md:inline lg:hidden" />
-                        turpis pulvinar, est scelerisque ligula sem
-                    </p>
-                    <div class="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
+                    <div class="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start mt-6">
                         <a
                             rel="noopener noreferrer"
                             href="#contacto"
