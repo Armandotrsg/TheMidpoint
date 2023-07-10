@@ -22,7 +22,7 @@ export const ContactCard = component$(({
             <span class="p-3 text-blue-500 rounded-full bg-blue-100/80 ">
                 <Slot />
             </span>
-            <h5 class="mt-4 text-lg font-medium text-gray-800">{title}</h5>
+            <strong class="mt-4 text-lg font-medium text-gray-800">{title}</strong>
             <p class="mt-2 text-gray-500">{description}</p>
             <div class="relative pt-3">
                 <a
