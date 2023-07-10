@@ -1,4 +1,5 @@
 import { component$, useSignal, $ } from "@builder.io/qwik";
+import logo from "../../assets/logo.png";
 
 export const navigationTabs = [
     {
@@ -36,9 +37,9 @@ export const Navbar = component$(() => {
             <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <a href="/" class="flex items-center">
                     <img
-                        src="https://flowbite.com/docs/images/logo.svg"
+                        src={logo}
                         class="h-8 mr-3"
-                        alt="Flowbite Logo"
+                        alt="The Midpoint Logo"
                         height={32}
                         width={32}
                     />
