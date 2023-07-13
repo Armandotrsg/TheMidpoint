@@ -12,7 +12,6 @@ export const useSendEmail = routeAction$(async (user) => {
     body: JSON.stringify(user),
   });
   const data = await res.json();
-  console.log(data);
   return data;
 });
 export default component$(() => {

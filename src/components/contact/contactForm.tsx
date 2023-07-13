@@ -40,6 +40,7 @@ export const ContactForm = component$(() => {
     track(() => action.value);
     if (action.value?.success) {
       showThanks.value = true;
+      name.value = "";
       email.value = "";
       message.value = "";
       setTimeout(() => {
@@ -49,7 +50,7 @@ export const ContactForm = component$(() => {
   });
 
   return (
-    <section class="text-gray-600 body-font relative">
+    <div class="text-gray-600 body-font relative">
       <div class="container px-5 pt-7 mx-auto">
         <div class="lg:w-1/2 md:w-2/3 mx-auto">
           <Form action={action} class="flex flex-wrap -m-2">
@@ -98,6 +99,6 @@ export const ContactForm = component$(() => {
           )}
         </div>
       </div>
-    </section>
+    </div>
   );
 });
