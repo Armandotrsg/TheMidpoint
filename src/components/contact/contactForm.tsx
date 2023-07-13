@@ -1,5 +1,6 @@
-import { component$, useSignal, type Signal } from "@builder.io/qwik";
+import { component$, useSignal, type Signal, useTask$ } from "@builder.io/qwik";
 import { Form } from "@builder.io/qwik-city";
+import { useSendEmail } from "~/routes/layout";
 
 interface InputProps {
   label: string;
@@ -31,17 +32,37 @@ export const ContactForm = component$(() => {
   const name = useSignal("");
   const email = useSignal("");
   const message = useSignal("");
+  const showThanks = useSignal(false);
+
+  const action = useSendEmail();
+
+  useTask$(({ track }) => {
+    track(() => action.value);
+    if (action.value?.success) {
+      showThanks.value = true;
+      email.value = "";
+      message.value = "";
+      setTimeout(() => {
+        showThanks.value = false;
+      }, 3500);
+    }
+  });
 
   return (
     <section class="text-gray-600 body-font relative">
       <div class="container px-5 pt-7 mx-auto">
         <div class="lg:w-1/2 md:w-2/3 mx-auto">
-          <Form class="flex flex-wrap -m-2">
+          <Form action={action} class="flex flex-wrap -m-2">
             <div class="p-2 w-full md:w-1/2">
               <InputField label="Nombre*" type="text" id="name" value={name} />
             </div>
             <div class="p-2 w-full md:w-1/2">
-              <InputField label="Email*" type="email" id="email" value={email} />
+              <InputField
+                label="Email*"
+                type="email"
+                id="email"
+                value={email}
+              />
             </div>
             <div class="p-2 w-full">
               <div class="relative">
@@ -55,7 +76,7 @@ export const ContactForm = component$(() => {
                   value={message.value}
                   onChange$={(e) => (message.value = e.target.value)}
                   required
-                 />
+                />
               </div>
             </div>
             <div class="p-2 w-full">
@@ -67,6 +88,14 @@ export const ContactForm = component$(() => {
               </button>
             </div>
           </Form>
+          {showThanks.value && (
+            <div class="mt-5 flex items-center justify-center text-center">
+              <p class="text-xl font-semibold text-primary-600">
+                ¡Gracias por tu contactarnos!, te contactaremos lo más pronto
+                posible
+              </p>
+            </div>
+          )}
         </div>
       </div>
     </section>
