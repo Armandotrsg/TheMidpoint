@@ -19,11 +19,11 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: 'The Midpoint',
+  title: 'The Midpoint - Consultora de Recursos Humanos',
   meta: [
     {
       name: 'description',
-      content: 'ConsultoraThe Midpoint es una empresa que ofrece servicios de consultoría y servicios especializados en recursos humanos, con más de 20 años de experiencia en el sector.',
+      content: 'Consultora The Midpoint: expertos en recursos humanos con 20 años de trayectoria.',
     },
   ],
 };
